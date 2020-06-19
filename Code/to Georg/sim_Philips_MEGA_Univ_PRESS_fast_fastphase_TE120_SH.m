@@ -58,7 +58,7 @@ for kk=1:numel(metabolites)
     
     % Spin system to simulate
     spinSys     = metabolite;
-    out_name    = ['Philips_MEGA__Univ_PRESS_4_56_TE120_' spinSys '.mat']; % For Philips output
+    out_name    = ['Philips_MEGA_Univ_PRESS_4_56_TE120_' spinSys '.mat']; % For Philips output
     
     % General properties of the simulations
     Npts    = 8192;     % number of spectral points
