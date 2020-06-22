@@ -9,7 +9,7 @@ addpath /Users/steve/Documents/My_Studies/Hercules_2_Study/Code/
 addpath /Users/steve/Documents/My_Studies/Hercules_2_Study/Code/Simulation/Functions/sim_sLASER_based/
 
 % run GOIA_build_sweep_v4 to generate RF_GOIA.mat and Sweep
-metabolites = {'GABA'};
+metabolites = {'Lys'};
 [outA,outB,outC,outD] = sim_HERMES_PRESS_fast_fastphase_SH(metabolites);
 toc
 % time_elapsed=toc;

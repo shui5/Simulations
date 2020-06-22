@@ -92,7 +92,7 @@ for kk=1:numel(metabolites)
     editTp3     = 20;               % duration of 3rd editing pulse [ms]
     editTp4     = 20;               % duration of 4th editing pulse [ms]
     TE          = 80;               % Echo time [ms]
-    TE1         = 6.96*2            % TE1 [ms] (Use 6.96*2 for Philips Original and 6.55*2 for Universial/Siemens)
+    TE1         = 6.96*2;            % TE1 [ms] (Use 6.96*2 for Philips Original and 6.55*2 for Universial/Siemens)
     TE2         = TE - TE1;         % TE2 [ms]
     flips       = [180,180];        % flip angles of first an second refocusing pulses [degrees]
     
