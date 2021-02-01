@@ -73,8 +73,8 @@ thkX=3;%1.66; %slice thickness of x refocusing pulse [cm]
 thkY=3;%1.66; %slice thickness of y refocusing pulse [cm]
 fovX=4.5;%2.4; %size of the full simulation Field of View in the x-direction [cm]
 fovY=4.5;%2.4; %size of the full simulation Field of View in the y-direction [cm]
-nX=41;%32; %Number of grid points to simulate in the x-direction
-nY=41;%32; %Number of grid points to simulate in the y-direction
+nX=101;%32; %Number of grid points to simulate in the x-direction
+nY=101;%32; %Number of grid points to simulate in the y-direction
 %tau1=30; %TE1 for first spin echo [ms]
 %tau2=105; %TE2 for second spin echo [ms]
 
