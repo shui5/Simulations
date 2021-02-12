@@ -75,7 +75,7 @@ for kk=1:numel(metabolites)
     % Define frequency parameters for editing targets
     flipAngle   = 180;
     centreFreq  = 3.0;              % Center frequency of MR spectrum [ppm]
-    editOnFreq1 = 1.9; % 4.56 for GSH, 1.9 for GABA     % Center frequency of 1st MEGA_PRESS experiment;
+    editOnFreq1 = 3.22; % 4.56 for GSH, 1.9 for GABA     % Center frequency of 1st MEGA_PRESS experiment;
     editOnFreq2 = 7.5;              % Center frequency of 2nd MEGA_PRESS experiment;
       
     % Define pulse durations and flip angles specific for every vendor
@@ -85,7 +85,7 @@ for kk=1:numel(metabolites)
     refTp       = 6.8944;           % duration of refocusing pulses [ms], set to zero for hard pulse
     editTp1     = 20;               % duration of 1st editing pulse [ms]
     editTp2     = 20;               % duration of 2nd editing pulse [ms]
-    TE          = 80; %80          % Echo time [ms]
+    TE          = 90; %80          % Echo time [ms]
     TE1         = 6.96*2;           % TE1 [ms] (Use 6.96*2 for Philips Original and 6.55*2 for Universial/Siemens) % Gradient mode at Maximum 13.5uT
     TE2         = TE - TE1;         % TE2 [ms]
     flips       = [180,180];        % flip angles of first an second refocusing pulses [degrees]
@@ -105,9 +105,9 @@ for kk=1:numel(metabolites)
     thkX    = 3;    % slice thickness of x refocusing pulse [cm]
     thkY    = 3;    % slice thickness of y refocusing pulse [cm]
     thkZ    = 3;    % slice thickness of z excitation pulse [cm]
-    nX      = 101;   % number of spatial points to simulate in x direction
-    nY      = 101;   % number of spatial points to simulate in y direction
-    nZ      = 101;   % number of spatial points to simulate in z direction
+    nX      = 41;   % number of spatial points to simulate in x direction
+    nY      = 41;   % number of spatial points to simulate in y direction
+    nZ      = 41;   % number of spatial points to simulate in z direction
     if nX>1
         x=linspace(-fovX/2,fovX/2,nX); %X positions to simulate [cm]
     else

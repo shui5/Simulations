@@ -10,7 +10,9 @@ addpath /Users/steve/Documents/My_Studies/Hercules_2_Study/Code/Simulation/Funct
 
 % run GOIA_build_sweep_v4 to generate RF_GOIA.mat and Sweep
 metabolites = {'PE'};
-[outA,outB] = sim_MEGA_PRESS_fast_fastphase_SH(metabolites);
+%[outA,outB] = sim_MEGA_PRESS_fast_fastphase_SH(metabolites);
+[outA,outB] = sim_Philips_MEGA_PRESS_Univ_fast_fastphase_TE80(metabolites);
+
 toc
 %time_elapsed=toc;
 % outSum.ppm = outA.ppm;
