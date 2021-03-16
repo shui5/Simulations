@@ -9,7 +9,7 @@ addpath /Users/steve/Desktop/sim_Siemens_PRESS_fast_fastphase.m/
 addpath /Users/steve/Documents/MATLAB/FID-A/inputOutput/io_loadRFwaveform.m/
 % run GOIA_build_sweep_v4 to generate RF_GOIA.mat and Sweep
 metabolites = {'GABA'};
-[out_2] = sim_Siemens_PRESS_fast_fastphase_TE17_5(metabolites);
+[out_2] = sim_Siemens_PRESS_fast_fastphase_TE140(metabolites);
 toc
 %time_elapsed=toc;
 % outSum.ppm = outA.ppm;
