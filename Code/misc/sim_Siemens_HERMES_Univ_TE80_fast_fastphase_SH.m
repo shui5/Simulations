@@ -46,7 +46,7 @@
 % refPhCyc1         = vector of phase cycling steps for 1st refocusing pulse [degrees]
 % refPhCyc2         = vector of phase cycling steps for 2nd refocusing pulse [degrees]
 
-function [outA,outB,outC,outD] = sim_Siemens_HERMES_PRESS_fast_fastphase_SH(metabolites)
+function [outA,outB,outC,outD] = sim_Siemens_HERMES_Univ_TE80_fast_fastphase_SH(metabolites)
 
 addpath(genpath('/Users/steve/Documents/MATLAB/FID-A'));
 % addpath(genpath('/home/shui5/matlab/FID-A')); %This is for KKI - SH 07252019
@@ -228,7 +228,7 @@ tausA = [TE1/2,...                           %middleEXC pulse to middleREFOC1
     taus   = tausA;
   %%
     % Load the spin system definitions and pick the spin system of choice
-    load spinSystems
+    load spinSystems_Ref_3_4
     sys=eval(['sys' spinSys]);
     
     % Resample the refocusing RF pulses to 100 pts to reduce computational workload 
