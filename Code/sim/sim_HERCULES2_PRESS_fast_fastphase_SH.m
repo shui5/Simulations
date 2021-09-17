@@ -111,9 +111,9 @@ for kk=1:numel(metabolites)
     thkX    = 3;    % slice thickness of x refocusing pulse [cm]
     thkY    = 3;    % slice thickness of y refocusing pulse [cm]
     thkZ    = 3;    % slice thickness of z excitation pulse [cm]
-    nX      = 41;   % number of spatial points to simulate in x direction
-    nY      = 41;   % number of spatial points to simulate in y direction
-    nZ      = 41;   % number of spatial points to simulate in z direction
+    nX      = 101;   % number of spatial points to simulate in x direction
+    nY      = 101;   % number of spatial points to simulate in y direction
+    nZ      = 101;   % number of spatial points to simulate in z direction
     if nX==1
         x=0;
     else

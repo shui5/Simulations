@@ -186,10 +186,9 @@ tausA = [TE1/2,...                           %middleEXC pulse to middleREFOC1
     
 end
 
-x_lim = [1,5];
-
-figure(1), plot(outA.ppm, outA.specs)
-legend('Lac'),set(gca,'xdir','reverse'),xlim(x_lim), xlabel('ppm'),title('Lac TE0')
+%x_lim = [1,5];
+%figure(1), plot(outA.ppm, outA.specs)
+%legend('Lac'),set(gca,'xdir','reverse'),xlim(x_lim), xlabel('ppm'),title('Lac TE0')
 
 end %END OF MAIN FUNCTION:  Nested functions below.
 
